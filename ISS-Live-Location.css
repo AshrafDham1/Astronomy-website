@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+:root {
+    --header-height: 3.5rem;
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --primary:rgb(0, 102, 204);
+    --white-color: #fff;
+    --body-color: hsl(220, 100%, 97%);
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: 0.938rem;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#heroText{
+    padding-bottom: 25px;
+}
+#container {
+    height: 96vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h1 {
+    font-size: 6vw;
+    color: #fff;
+    margin-top: 2.5vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading span {
+    color: #000;
+    font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* -webkit-text-stroke: red 3px; */
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: orangered;
+}
+
+#notice {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    background-color: rgb(0, 102, 204);
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'poppins';
+    word-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgb(0, 102, 204);
+    transition: 0.3s ease-in-out all;
+}
+
+#notice:hover {
+    box-shadow: 0px 0px 20px rgb(0, 102, 204);
+}
+
+#map { 
+    height: 500px; 
+    width: 70%;
+    border: var(--primary) 5px solid;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.info {
+    display:flex;
+    gap:5vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+    color: #000;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#heroHedeader{
+    color: #fff !important;
+}
+.marquee {
+    width: 100%;
+	line-height: 50px;
+	background-color: rgb(18, 25, 65);
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
+    display: inline-block;
+    font-size: 20px;
+    font-family: poppins;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-weight: 500;
+}
+.marquee a {
+    color: black;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@media (max-width: 800px) {
+    .heading h1 {
+        font-size: 10vw;
+    }
+    .heading span {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        position: relative;
+        top: -40px;
+        line-height: 5vw;
+        text-align: center;
+    }
+    #map {
+        width: 90%;
+        margin-top: 3vw;
+    }
+    .info {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #notice {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
+#heroSection {
+    background-image: url('/assests/issHero.png') !important;
+    background-position: center;
+    background-size: cover !important; 
+    background-repeat: no-repeat; 
+    height: 90vh !important;
+    margin-top: -150px;
+}
+
+
+#container3D canvas {
+    margin: 0 auto !important;
+    width: 75vw !important;
+    height: 75vh !important;
+    position: relative;
+    
+    background-color: #e9e8e81f;
+    border-radius: 25px;
+  }

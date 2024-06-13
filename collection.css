@@ -1,0 +1,120 @@
+#heroSection {
+    background-image: url('/assests/CollectionHero.jpg') !important;
+    background-position: center;
+    background-size: cover !important; /* Ensure the image covers the entire section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh !important;
+    margin-top: -150px;
+}
+#heroInfo{
+    margin-top: 100px;
+}
+
+#heroText{
+    padding-right:  50px;
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+.button:hover{
+    color: white !important;
+}
+.colBtn{
+    display: inline-block !important;
+    z-index: 0 !important;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1px auto !important;
+}
+#colBtnContainer{
+    margin: 0 4rem;
+    width: auto;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+#colSection {
+    margin: 2rem 4rem;
+}
+
+.col-container {
+    background-color: rgba(48, 47, 47, 0.288);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.col-container p {
+    width: 100% !important;
+    padding: 5px;
+}
+
+
+.expanded {
+    max-height: none;
+    overflow: visible;
+}
+.savedcontent {
+    margin: 0 4rem;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#mainSection {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.col-container {
+    display: inline-block;
+    position: relative;
+    width: 32%;
+    box-sizing: border-box;
+}
+.removebtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(176, 206, 255);
+    border: none;
+    box-shadow: 0 0 5px #999;
+    border-radius: 3px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.removespan {
+    width: 100%;
+    border-right: 1px solid rgb(77, 98, 131);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.removesvg {
+    padding-left: 10px;
+}
+.removebtn:hover {
+    background-color: rgb(255, 8, 0);
+}
+
+.removebtn:hover span {
+    width: 0%;
+    transition: .2s;
+    border: none;
+    overflow: hidden;
+}
+.removebtn:hover svg {
+    width: 100%;
+    padding-left: 0;
+}

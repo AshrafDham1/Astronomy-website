@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-focus-3-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spaceflightnews.html" class="dropdown__link">
+                                    <i class="ri-file-list-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="marsPhoto.html" class="dropdown__sublink">
+                                            <i class="ri-image-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="collection.html" class="nav__link">My Collection</a></li>
+
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="useful.html" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="site-header">
+
+        <div class="site-header-mask">
+            <div class="site-title">
+                <div id="heroParagraph">
+                    <div id="heroInfo">
+                        <h2 id="heroHedeader">Explore Astronomy</h2>
+                        <p id="heroText">
+                            Discover the wonders of the universe with us. Dive deep into the
+                            realms of space and astronomy, where you'll find detailed
+                            information on celestial bodies, the latest astronomical
+                            discoveries, and insights into the mysteries of the cosmos. From
+                            stunning images of distant galaxies to the science behind black
+                            holes and exoplanets, embark on a journey through the stars and
+                            expand your understanding of the universe.
+                        </p>
+
+                        <div class="box">
+                            <button class="button" onclick="scrollDown()">Discover More</button>
+                            <div class="space">
+                                <span style="--i: 31" class="star"></span>
+                                <span style="--i: 12" class="star"></span>
+                                <span style="--i: 57" class="star"></span>
+                                <span style="--i: 93" class="star"></span>
+                                <span style="--i: 23" class="star"></span>
+                                <span style="--i: 70" class="star"></span>
+                                <span style="--i: 6" class="star"></span>
+                                <span style="--i: 79" class="star"></span>
+                                <span style="--i: 20" class="star"></span>
+                                <span style="--i: 10" class="star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+       <div  id="preloader">
+    <div class="content">
+        <div class="planet">
+            <div class="ring"></div>
+            <div class="cover-ring"></div>
+            <div class="spots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <p class="preloadp">loading</p>
+    </div></div>
+
+
+    <section id="IOTD">
+        <h2 class="subtitles">Astronomy Picture of the Day</h2>
+        <div id="IOTDresult"></div>
+    </section>
+
+
+    <section id="EPIC">
+        <h2 class="subtitles">Epic Image</h2>
+        <div id="epicContainer">
+            <form id="dateForm">
+                <h3 class="epic">Select a date to view the Earth Polychromatic Imaging Camera of the earth:</h3>
+                <label for="dateInput" class="date-label">Select a date:</label>
+                <input type="date" id="dateInput" name="dateInput">
+                <div class="box">
+                    <button type="button" onclick="processDate()" class="button" style="color: black;"
+                        id="submitDateForm">Submit</button>
+                    <div class="space">
+                        <span style="--i: 31" class="star"></span>
+                        <span style="--i: 12" class="star"></span>
+                        <span style="--i: 57" class="star"></span>
+                        <span style="--i: 93" class="star"></span>
+                        <span style="--i: 23" class="star"></span>
+                        <span style="--i: 70" class="star"></span>
+                        <span style="--i: 6" class="star"></span>
+                        <span style="--i: 79" class="star"></span>
+                        <span style="--i: 20" class="star"></span>
+                        <span style="--i: 10" class="star"></span>
+                    </div>
+                </div>
+                <div id="epicContent">
+                    EPIC provides information on the daily imagery collected by DSCOVR's Earth Polychromatic Imaging
+                    Camera (EPIC) instrument. EPIC provides full disc imagery of the Earth and captures unique
+                    perspectives of certain astronomical events such as lunar transits using a 2048x2048 pixel CCD
+                    (Charge Coupled Device) detector coupled to a 30-cm aperture Cassegrain telescope.
+                </div>
+                <div id="saveBtn" style="margin-top: 15px;"></div>
+            </form>
+            <div class="img-cap">
+                <div id="imageContainer"></div>
+                <figcaption id="captionContainer"></figcaption>
+                <div class="Sbtn"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

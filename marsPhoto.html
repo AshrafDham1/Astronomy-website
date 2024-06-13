@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars Photo</title>
+    <link rel="stylesheet" href="marsPhoto.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spaceflightnews.html" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="collection.html" class="nav__link">My Collection</a></li>
+
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="useful.html" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div  id="preloader">
+        <div class="content">
+            <div class="planet">
+                <div class="ring"></div>
+                <div class="cover-ring"></div>
+                <div class="spots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="preloadp">loading</p>
+        </div></div>
+    </div>
+    <section id="heroSection" class="marstext">
+        <!-- <img src="/assests/pexels-philippedonn-1169754.jpg" alt="space photo"  class="heroImg"/> -->
+        <div id="heroParagraph">
+            <div id="heroInfo">
+                <h2 id="heroHedeader" class="marstext">Explore Mars Photos</h2>
+                <p id="heroText">
+                    Dive into the Red Planet's captivating vistas. Witness the
+                    breathtaking landscapes of Mars through the lens of exploration.
+                    Experience the thrill of discovery as rovers traverse the Martian
+                    terrain, capturing images that unveil the secrets of our neighboring
+                    world. Join us on an exhilarating journey to unlock the mysteries of
+                    Mars and unravel its fascinating history.
+                </p>
+            </div>
+            <!-- <img src="/assests/file.png" alt="" height="500px"> -->
+        </div>
+    </section>
+    <!-- <div class="loader">
+        <img src="f.svg" alt="rocket" />
+    </div> -->
+    <section id="carouselSection">
+        <!--Font Awesome CDN-->
+
+        <div class="Carouselcontainer">
+
+            <div class="slide">
+
+                <div class="item" style="background-image: url(assests/marssol.jpg);">
+                    <div class="content">
+                        <div class="name">View the full gallery</div>
+                        <div class="des">View raw images taken by NASA's Curiosity Mars Rover</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(/assests/marsfullphoto.jpg);">
+                    <div class="content">
+                        <div class="name">The Red Planet</div>
+                        <div class="des">Mars is the fourth planet from the Sun, and the seventh largest. It's the only planet we know of inhabited entirely by robots</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(/assests/marsperseverance.webp);">
+                    <div class="content">
+                        <div class="name">Perseverance Rover</div>
+                        <div class="des">NASA's Mars Perseverance rover is building a unique rock collection, which also includes samples of Mars atmosphere and loose surface material</div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(/assests/curiosity.jpg);">
+                    <div class="content">
+                        <div class="name">Curiosity Rover</div>
+                        <div class="des">Part of NASA's Mars Science Laboratory mission, Curiosity, was the largest and most capable rover ever sent to Mars when it launched in 2011 </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(/assests/opportunity.jpg);">
+                    <div class="content">
+                        <div class="name">Opportunity</div>
+                        <div class="des">Opportunity, is a robotic rover that was active on Mars from 2004 until 2018.</div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+            <div class="button">
+                <button class="prev Tbutton"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next Tbutton"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="Pcontent">
+        <h2 class="subtitles">Mars Photo Album</h2>
+
+        <div class="Photocontainer">
+            <!-- <div class="navidation-container">
+                <span class="background"></span>
+                <div class="navidation-container">
+                    <span class="background"></span>
+                    <span class="navigation-items resultsNav">
+                        <h3 class="clickable favorites">Favorites</h3> 
+                    </span>
+                </div>
+            </div> -->
+
+            <div class="images-container"></div>
+        </div>
+
+        <div class="save-confirmed hidden">
+            <h1>ADDED!</h1>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="marsPhoto.js"></script>
+    <script src="carousel.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spaceflightnews.html" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="marsPhoto.html" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="collection.html" class="nav__link">My Collection</a></li>
+
+                    <li><a href="#" class="nav__link">Contact</a></li>
+                    <li><a href="useful.html" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div  id="preloader">
+        <div class="content">
+            <div class="planet">
+                <div class="ring"></div>
+                <div class="cover-ring"></div>
+                <div class="spots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="preloadp">loading</p>
+        </div></div>
+    </div>
+    <section id="heroSection">
+        <!-- <img src="/assests/pexels-philippedonn-1169754.jpg" alt="space photo"  class="heroImg"/> -->
+        <div id="heroParagraph">
+            <div id="heroInfo">
+                <h2 id="heroHedeader">Contact Me</h2>
+                <p id="heroText">
+                    Have a stellar idea or just want to say hello? I'd love to hear from you! Whether it's a collaboration, a question about the cosmos, don't hesitate to reach out.         </p>
+            </div>
+            <!-- <img src="/assests/file.png" alt="" height="500px"> -->
+        </div>
+    </section>
+    <section id="about">
+        <h2 class="subtitles" style="margin-bottom: 20px;">About</h2><br>
+        <div class="aboutContainer">
+            <div>
+                <p class="aboutParagraph">Welcome to SpaceWonders, a digital cosmos curated by Ashraf Dham, a
+                    16-year-old high schooler with a passion for technology and a deep love for the mysteries of space.
+                </p>
+                <p class="aboutParagraph">Our mission is to make the wonders of space accessible to everyone, from
+                    seasoned astronomers to budding stargazers. Join us on this cosmic journey as we explore the
+                    infinite possibilities that lie beyond our planet.</p>
+                    <p class="aboutParagraph">Ready to launch into more cosmic adventures? Blast off to my <a href="https://dev-ashraf-site.pantheonsite.io/" target="_blank" class="portfolioLink">Portfolio</a> and discover an entire universe of captivating projects!</p>
+        
+            </div>
+            <div>
+                <img src="/assests/stargazing.webp" alt="space photo" class="aboutImg" />
+                
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="conactSection">
+        <h2 class="subtitles">leave a message</h2><br>
+        <section id="conactSection">
+            <div id="formSection">
+
+                <div class="contactContainer">
+                    <form action="#" class="contactForm" id="emailForm">
+                        <input type="text" name="name" placeholder="Enter your name" class="contactInput"
+                            id="contactName" required>
+                        <input type="email" name="email" placeholder="Enter your email" class="contactInput"
+                            id="contactEmail" required>
+                        <textarea name="message" id="ContactText" placeholder="Your message" class="contactInput"
+                            required></textarea>
+                        <div class="box">
+                            <button class="button"  type="submit" id="submitBtn"
+                                style="color: black;">Submit</button>
+
+                            <div class="space">
+                                <span style="--i: 31" class="star"></span>
+                                <span style="--i: 12" class="star"></span>
+                                <span style="--i: 57" class="star"></span>
+                                <span style="--i: 93" class="star"></span>
+                                <span style="--i: 23" class="star"></span>
+                                <span style="--i: 70" class="star"></span>
+                                <span style="--i: 6" class="star"></span>
+                                <span style="--i: 79" class="star"></span>
+                                <span style="--i: 20" class="star"></span>
+                                <span style="--i: 10" class="star"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contactLinkContainer">
+                    <div class="contactLinks">
+                        <a href="mailto:ashraf.dham08@gmail.com" target="_blank">
+                            <img src="/assests/email.png" alt="email" class="linkIMG">
+                        </a>
+                    </div>
+                    <div class="contactLinks">
+                        <a href="http://www.linkedin.com/in/ashraf-dham" target="_blank">
+                            <img src="/assests/linkedin.png" alt="linkedIn" class="linkIMG">
+                        </a>
+                    </div>
+                    <div class="contactLinks">
+                        <a href="https://github.com/AshrafDham1" target="_blank">
+                            <img src="/assests/github-logo.png" alt="Github" class="linkIMG">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </section> 
+    
+  
+
+
+    <footer style="margin: 0;">
+        <p style="margin: 0;">Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+
+</html>

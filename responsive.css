@@ -1,0 +1,286 @@
+@media only screen and (max-width: 450px) {
+
+    /* Styles for extra small devices */
+    #heroHedeader {
+        font-size: 60px !important;
+    }
+
+    #heroText {
+        font-size: 0.7rem;
+    }
+
+    #heroParagraph {
+        margin-top: 30px;
+    }
+    .dropdown__link{
+        width: 100%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* Styles for extra small devices */
+    #heroHedeader {
+        font-size: 70px;
+    }
+
+    #heroText {
+        font-size: 0.75rem;
+    }
+
+    #heroParagraph {
+        margin-top: 150px;
+    }
+    #IOTDresult {
+        flex-direction: column-reverse !important;
+        gap: 25px;
+    }
+
+    #IOTDinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .IOTDp {
+        text-align:  center !important; 
+    }
+    #IOTDimg{
+        width: 90% !important;
+    
+    }
+    #epicContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .IOTDheader{
+        text-align: center;
+    }
+    .dropdown__link{
+        width: 100%;
+    }
+    .isstext{
+        line-height: 1;
+    }
+    .issheader{
+        margin-top: 50px;
+    }
+    .flighttext {
+        line-height: 1.2 !important;
+        font-size: 50px !important;
+    }
+    .Spacecontainer{
+        margin-left: -150px;
+    }
+    #heroParagraph{
+        padding: 0  6rem;
+    }
+    .article {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        width: calc(100%   - 20px) !important;
+        z-index: 10;
+        min-height: auto !important;
+    }
+    .articleIMG {
+        width: 100%;
+        height: 300px !important;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .marstext {
+        line-height: 1.2 !important;
+        font-size: 75px !important;
+    }
+    .Carouselcontainer{
+display: none;    }
+.images-container {
+    margin-top: 50px;
+    margin: 50px auto;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .images-container .card {
+    width: 40%;
+    /* Adjust width as needed */
+    margin: 10px;
+    /* Adjust margin as needed */
+  }
+  .collectiontext{
+       line-height: 1.2 !important;
+        font-size: 75px !important;
+  }
+  .savedcontent {
+    margin: 0 1rem !important;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-container{
+    width: 80%;
+}
+.aboutContainer{
+    flex-direction: column-reverse;
+}
+.aboutImg{
+    width: 100%;
+}
+.aboutParagraph{
+    width: 100%;
+    text-align: center;
+}
+#formSection{
+    padding: 0;
+}
+#conactSection{
+    margin: 0;
+}
+.contactInput{
+width: 55vw;
+margin-left: -20px;
+}
+.card{
+    width: 85%;
+}
+#Main{
+    width:400px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    /* Styles for small devices */
+    #heroHedeader {
+        font-size: 70px !important;
+    }
+
+    #heroText {
+        font-size: 0.75rem;
+    }
+
+    #heroParagraph {
+        margin-top: 30px;
+    }
+    #IOTDresult {
+        flex-direction: column-reverse !important;
+        gap: 25px;
+    }
+
+    #IOTDinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .IOTDp {
+        text-align:  center !important; 
+    }
+    #IOTDimg{
+        width: 90% !important;
+    
+    }
+    #epicContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .dropdown__link{
+        width: 100%;
+    }
+    
+}
+
+/* Medium devices (landscape tablets and small desktops, 768px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Styles for medium devices */
+    .nav {
+        margin: 0 40px;
+    }
+
+    #heroHedeader {
+        font-size: 80px;
+    }
+
+    #heroText {
+        font-size: 0.9rem;
+    }
+
+    #heroParagraph {
+        margin-top: 30px;
+    }
+
+    #IOTDresult {
+        flex-direction: column-reverse !important;
+        gap: 25px;
+    }
+
+    #IOTDinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    .IOTDp {
+        text-align:  center !important; 
+    }
+    #IOTDimg{
+        width: 80% !important;
+    
+    }
+    #epicContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .dropdown__link{
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 1024px to 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    /* Styles for large devices */
+    .nav {
+        margin: 0 50px;
+    }
+
+    #heroHedeader {
+        font-size: 90px;
+    }
+
+    #heroText {
+        font-size: 1rem;
+    }
+
+    #heroParagraph {
+        margin-top: 0;
+    }
+}

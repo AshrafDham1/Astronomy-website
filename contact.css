@@ -1,0 +1,243 @@
+:root {
+    --header-height: 3.5rem;
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --primary:rgb(0, 102, 204);
+    --white-color: #fff;
+    --body-color: hsl(220, 100%, 97%);
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: 0.938rem;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+#heroSection {
+    background-image: url('/assests/contact.jpg') !important;
+    background-position: center;
+    background-size: cover !important; /* Ensure the image covers the entire section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 80vh !important;
+    margin-top: -150px;
+}
+#heroText{
+    color: white !important;
+}
+#about, #conactSection, #links{
+    margin: 2rem 4rem;
+}
+
+#about {
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+
+#about p {
+
+    font-size: 1.5rem; /* Normal font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    color: #666; /* Slightly darker text color */
+    margin-bottom: 15px; /* Bottom margin for spacing between paragraphs */
+}
+
+#conactSection{
+    background-color: var(--bg-color); 
+    padding: 25px 0;
+}
+#contactHr{
+    height: 3px;
+    position: relative;
+    left: 4rem;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: var(--primary-color);
+    outline: 0;
+    border: 0;
+    transition: 0.8s ease;
+    width: 370px;
+
+}
+
+#formSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 4rem;   
+    position: relative;
+    margin-top:1rem ;
+    flex-wrap: wrap;
+    gap: 70px;
+    
+}
+.contactContainer{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    height: 450px;
+}
+.contactInput{
+    width: 40vw;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+}
+#ContactText{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contactInput:focus{
+    border: 2px solid var(--primary);
+}
+.contactInput::placeholder{
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 530;
+}
+
+#submitBtn:hover{
+    color: white !important;
+}
+.contactLinkContainer {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contactLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactLinks img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contactLinks a {
+    text-decoration: none;
+  }
+  
+
+.linkIMG{
+    width: 25px;
+    height: 25px;
+    padding:2px ;
+}
+
+.portfolioLink{
+    color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%;
+    min-height: 11rem;
+}
+.Cards{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aboutParagraph {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    width: 50vw;
+}
+p{
+    margin-bottom: 15px;
+
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.aboutContainer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.aboutImg{
+    width: 40vw;
+    
+}
+
+.textAfter{
+    margin-top: -5px;
+    background-color: rgba(255, 255, 255, 0.863); 
+    backdrop-filter: blur(5px); 
+    width: 40vw;
+    display: flex;
+    align-items:center ;
+    justify-content: start;
+    column-gap: 20px;
+    top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    line-height: 1.5rem;
+    border:1px solid var(--primary);
+    border-top: none;
+}
+.textAfter a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items:center ;
+    padding-left: 40px;
+
+}
+.Check{
+    width: 2rem;
+    height: 2rem;
+    padding: 2px;
+    margin: 4px 0;
+}
+
+
+

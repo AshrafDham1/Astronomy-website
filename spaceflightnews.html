@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spaceflightnews.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Space Flight News</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="marsPhoto.html" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="collection.html" class="nav__link">My Collection</a></li>
+
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="useful.html" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div  id="preloader">
+        <div class="content">
+            <div class="planet">
+                <div class="ring"></div>
+                <div class="cover-ring"></div>
+                <div class="spots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="preloadp">loading</p>
+        </div></div>
+    </div>
+    <section id="heroSection">
+        <!-- <img src="/assests/pexels-philippedonn-1169754.jpg" alt="space photo"  class="heroImg"/> -->
+        <div id="heroParagraph">
+            <div id="heroInfo">
+                <h2 id="heroHedeader" class="flighttext">Space Flights News</h2>
+                <p id="heroText">
+                    Stay updated with the latest developments in space exploration, upcoming rocket launches, and
+                    missions to the Moon and Mars. Get insights from industry experts and follow groundbreaking
+                    discoveries that shape our understanding of the universe.
+                </p>
+            </div>
+            <!-- <img src="/assests/file.png" alt="" height="500px"> -->
+        </div>
+    </section >
+    <div class="Spacecontainer">
+
+        <!-- Space Shuttle -->
+        <div class="space-shuttle-container">
+          <div class="rocket">
+            <!-- Tank -->
+            <div class="tank-connector"></div>
+            <div class="tank">
+              <div class="tank-ring-frame"></div>
+            </div>
+      
+            <!-- Rocket -->
+            <div class="left-rocket"></div>
+            <div class="left-rocket-engine"></div>
+            <div class="right-rocket"></div>
+            <div class="right-rocket-engine"></div>
+          </div>
+      
+          <!-- Orbiter -->
+          <div class="orbiter">
+            <div class="wing-bottom"></div>
+            <div class="wing"></div>
+            <div class="fuselage"></div>
+            <div class="fuselage-window"></div>
+            <div class="cabin"></div>
+            <div class="cargo-bay"></div>
+            <div class="elevon"></div>
+            <div class="elevon-left"></div>
+            <div class="elevon-right"></div>
+            <div class="aft-fuselage-block"></div>
+            <div class="main-engine-left-connector"></div>
+            <div class="main-engine-left"></div>
+            <div class="main-engine-right-connector"></div>
+            <div class="main-engine-right"></div>
+            <div class="main-engine-top-connector"></div>
+            <div class="main-engine-top"></div>
+            <div class="maneuvering-engine-right"></div>
+            <div class="maneuvering-engine-left"></div>
+            <div class="vertical-stabilizer"></div>
+            <div class="aft-fuselage"></div>
+          </div>
+      
+          <!-- Rocket Exhaust -->
+          <div class="solid-rocket-booster-exhaust"></div>
+          <div class="main-engine-exhaust"></div>
+        </div>
+      </div>
+
+    <section id="spaceflightnews">
+        <h2 class="subtitles">Space Flight News</h2>
+
+        <div id="articlesContainer">
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="spaceflightnews.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Collection</title>
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spaceflightnews.html" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="marsPhoto.html" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav__link">My Collection</a></li>
+
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="useful.html" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content" id="preloader">
+        <div class="planet">
+            <div class="ring"></div>
+            <div class="cover-ring"></div>
+            <div class="spots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <p class="preloadp"> loading</p>
+    </div>
+    <section id="heroSection">
+        <!-- <img src="/assests/pexels-philippedonn-1169754.jpg" alt="space photo"  class="heroImg"/> -->
+        <div id="heroParagraph">
+            <div id="heroInfo">
+                <h2 id="heroHedeader" class="collectiontext">Your collection</h2>
+                <p id="heroText">
+                    Welcome to your personal collection of breathtaking space images. Explore the wonders of the cosmos, captured by the lenses of NASA's most advanced satellites and telescopes. Immerse yourself in the beauty of distant galaxies, nebulae, and celestial phenomena, all from the comfort of your screen.
+                </p>
+
+                <div class="box">
+                    <button class="button" onclick="scrollDown()">Explore collection </button>
+                    <div class="space">
+                        <span style="--i: 31" class="star"></span>
+                        <span style="--i: 12" class="star"></span>
+                        <span style="--i: 57" class="star"></span>
+                        <span style="--i: 93" class="star"></span>
+                        <span style="--i: 23" class="star"></span>
+                        <span style="--i: 70" class="star"></span>
+                        <span style="--i: 6" class="star"></span>
+                        <span style="--i: 79" class="star"></span>
+                        <span style="--i: 20" class="star"></span>
+                        <span style="--i: 10" class="star"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="/assests/file.png" alt="" height="500px"> -->
+        </div>
+    </section>
+
+
+    <section id="colSection">
+        <h2 class="subtitles">Discover Your Collection</h2>
+        <div id="colBtnContainer">
+            <div class="box colBtn">
+                <button class="button" id="AllBtn" style="color: black;">All</button>
+                <div class="space">
+                    <span style="--i: 31" class="star"></span>
+                    <span style="--i: 12" class="star"></span>
+                    <span style="--i: 57" class="star"></span>
+                    <span style="--i: 93" class="star"></span>
+                    <span style="--i: 23" class="star"></span>
+                    <span style="--i: 70" class="star"></span>
+                    <span style="--i: 6" class="star"></span>
+                    <span style="--i: 79" class="star"></span>
+                    <span style="--i: 20" class="star"></span>
+                    <span style="--i: 10" class="star"></span>
+                </div>
+            </div>
+            <div class="box colBtn">
+                <button class="button" id="IOTDBtn" style="color: black;">IOTD</button>
+                <div class="space">
+                    <span style="--i: 31" class="star"></span>
+                    <span style="--i: 12" class="star"></span>
+                    <span style="--i: 57" class="star"></span>
+                    <span style="--i: 93" class="star"></span>
+                    <span style="--i: 23" class="star"></span>
+                    <span style="--i: 70" class="star"></span>
+                    <span style="--i: 6" class="star"></span>
+                    <span style="--i: 79" class="star"></span>
+                    <span style="--i: 20" class="star"></span>
+                    <span style="--i: 10" class="star"></span>
+                </div>
+            </div>
+            <div class="box colBtn">
+                <button class="button" id="EPICBtn" style="color: black; ">EPIC</button>
+                <div class="space">
+                    <span style="--i: 31" class="star"></span>
+                    <span style="--i: 12" class="star"></span>
+                    <span style="--i: 57" class="star"></span>
+                    <span style="--i: 93" class="star"></span>
+                    <span style="--i: 23" class="star"></span>
+                    <span style="--i: 70" class="star"></span>
+                    <span style="--i: 6" class="star"></span>
+                    <span style="--i: 79" class="star"></span>
+                    <span style="--i: 20" class="star"></span>
+                    <span style="--i: 10" class="star"></span>
+                </div>
+            </div>
+            <div class="box colBtn">
+                <button class="button" id="MarsBtn" style="color: black;">Mars</button>
+                <div class="space">
+                    <span style="--i: 31" class="star"></span>
+                    <span style="--i: 12" class="star"></span>
+                    <span style="--i: 57" class="star"></span>
+                    <span style="--i: 93" class="star"></span>
+                    <span style="--i: 23" class="star"></span>
+                    <span style="--i: 70" class="star"></span>
+                    <span style="--i: 6" class="star"></span>
+                    <span style="--i: 79" class="star"></span>
+                    <span style="--i: 20" class="star"></span>
+                    <span style="--i: 10" class="star"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="mainSection">
+            <div id="allSavedContent" class="savedcontent"></div>
+        </section>
+    </main>
+       
+    <footer>
+        <p>Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="collection.js"></script>
+</body>
+</html>

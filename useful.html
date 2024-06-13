@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="useful.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-planet-line"></i> SpaceWonders
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Explore <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/ISS-Live-Location.html" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> ISS Live Location
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spaceflightnews.html" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i>Space Flight News
+                                </a>
+                            </li>
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Mars
+                                    <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="marsPhoto.html" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Mars Photo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="collection.html" class="nav__link">My Collection</a></li>
+
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li><a href="#" class="nav__link">Useful links</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div  id="preloader">
+        <div class="content">
+            <div class="planet">
+                <div class="ring"></div>
+                <div class="cover-ring"></div>
+                <div class="spots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="preloadp">loading</p>
+        </div></div>
+    <section id="heroSection">
+        <!-- <img src="/assests/pexels-philippedonn-1169754.jpg" alt="space photo"  class="heroImg"/> -->
+        <div id="heroParagraph">
+            <div id="heroInfo">
+                <h2 id="heroHedeader">Useful Links</h2>
+                <p id="heroText">
+                    Discover a collection of essential links to enhance your understanding of astronomy and space exploration. Whether you're a beginner or an expert, these resources will provide you with valuable information and updates on the latest discoveries:
+                    <!-- <img src="/assests/file.png" alt="" height="500px"> -->
+        </div>
+    </section>
+ 
+    <section> 
+        <h2 class="subtitles">Moon lander game</h2><br><br>
+        <p style="text-align: center; width: 100%;" id="instructions">
+            Instructions: Use <strong>W</strong> to thrust, <strong>A/D</strong> to rotate, <strong>S</strong> to start.
+        </p>
+        <canvas id="Main" width="1000" height="360"></canvas>
+    
+     
+    
+      </section>
+    
+    <section id="links">
+        <h2 class="subtitles">useful link</h2><br><br>
+        <div class="Cards">
+            <div class="card">
+                <h2>NASA</h2>
+                <p>Official website for NASA with news, images, and educational resources.</p>
+                <a href="https://www.nasa.gov/" target="_blank" class="btn">Visit NASA</a>
+            </div>
+
+            <!-- ESA Card -->
+            <div class="card">
+                <h2>ESA (European Space Agency)</h2>
+                <p>Information about space exploration missions, science, and technology from Europe's space agency.</p>
+                <a href="https://www.esa.int/" target="_blank" class="btn">Visit ESA</a>
+            </div>
+
+            <!-- HubbleSite Card -->
+            <div class="card">
+                <h2>HubbleSite</h2>
+                <p>Information about the Hubble Space Telescope, including images, news, and educational resources.</p>
+                <a href="https://hubblesite.org/" target="_blank" class="btn">Visit HubbleSite</a>
+            </div>
+
+            <!-- Space.com Card -->
+            <div class="card">
+                <h2>Space.com</h2>
+                <p>News, articles, and information about space exploration, astronomy, and astrophysics.</p>
+                <a href="https://www.space.com/" target="_blank" class="btn">Visit Space.com</a>
+            </div>
+
+            <!-- Sky & Telescope Card -->
+            <div class="card">
+                <h2>Sky & Telescope</h2>
+                <p>Resources for amateur astronomers, including sky maps, observing tips, and news.</p>
+                <a href="https://skyandtelescope.org/" target="_blank" class="btn">Visit Sky & Telescope</a>
+            </div>
+
+            <!-- SETI Institute Card -->
+            <div class="card">
+                <h2>SETI Institute</h2>
+                <p>Research and exploration related to the search for extraterrestrial intelligence (SETI).</p>
+                <a href="https://www.seti.org/" target="_blank" class="btn">Visit SETI Institute</a>
+            </div>
+
+            <!-- Caltech Astronomy Card -->
+            <div class="card">
+                <h2>Caltech Astronomy</h2>
+                <p>Information about astronomy research and education at the California Institute of Technology.</p>
+                <a href="https://www.astro.caltech.edu/" target="_blank" class="btn">Visit Caltech Astronomy</a>
+            </div>
+
+            <!-- AAS (American Astronomical Society) Card -->
+            <div class="card">
+                <h2>American Astronomical Society (AAS)</h2>
+                <p>Resources, publications, and events related to astronomy and astrophysics.</p>
+                <a href="https://aas.org/" target="_blank" class="btn">Visit AAS</a>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <footer style="margin: 0;">
+        <p style="margin: 0;">Copyright &copy; 2024 Ashraf Dham. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+    <script src="useful.js"></script>
+</body>
+
+</html>

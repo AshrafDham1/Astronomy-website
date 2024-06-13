@@ -1,0 +1,10 @@
+#heroSection {
+    background-image: url("/assests/spaceAgency.png") !important;
+    background-position: center;
+    background-size: cover !important;
+    /* Ensure the image covers the entire section */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    height: 95vh !important;
+    margin-top: -150px;
+}
