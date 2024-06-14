@@ -1,8 +1,8 @@
 const preloader= document.getElementById("preloader");
-// window.addEventListener("load",fullyLoaded);
-// function fullyLoaded(){
-//     preloader.style.display="none"
-// }
+window.addEventListener("load",fullyLoaded);
+function fullyLoaded(){
+    preloader.style.display="none"
+}
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
       nav = document.getElementById(navId)

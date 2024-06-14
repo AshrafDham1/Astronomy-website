@@ -568,7 +568,7 @@ a {
 #heroHedeader {
     text-align: center;
     font-weight: 600;
-    font-size: 130px;
+    font-size: 120px;
 }
 
 #heroInfo {
@@ -724,7 +724,7 @@ a {
 
 #preloader {
     display: flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     z-index: 100000000 !important;
     margin-top: -850px !important;
