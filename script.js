@@ -90,19 +90,7 @@ let IOTD = { //IOTD=image of the day
       </button>
     </div>
     ${mediaElement}`; // Insert the media element
-    const imageElement = document.getElementById('IOTDimg');
-    if (imageElement && imageElement.tagName.toLowerCase() === 'img') {
-      const imageWidth = imageElement.width;
-      const imageHeight = imageElement.height;
-      console.log(imageHeight)
-      console.log(imageWidth)
-
-      if (imageHeight > 1.1* imageWidth) {
-      
-        console.log("run")
-        imageElement.style.transform = 'rotate(90deg)';
-      }
-    }
+    
     saveIOTD()
 
   },
